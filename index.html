@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Könyvtár — Admin / User</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<div class="container brand">
+<div class="logo">KT</div>
+<div>
+<h1>Könyvtár</h1>
+<div class="small">Admin és Olvasó fiókok — GitHub Pages kompatibilis</div>
+</div>
+</div>
+</header>
+
+
+<main class="container">
+<div class="grid">
+<aside class="sidebar card">
+<h3>Belépés</h3>
+<div class="small">Használat: előre beállított fiókok: <strong>admin/admin</strong> és <strong>user/user</strong></div>
+<div class="form-row" style="margin-top:12px">
+<input id="loginId" placeholder="Felhasználó" autocomplete="username">
+</div>
+<div class="form-row" style="margin-top:8px">
+<input id="loginPw" placeholder="Jelszó" type="password" autocomplete="current-password">
+</div>
+<div class="form-row" style="margin-top:8px">
+<button class="btn" id="loginBtn">Bejelentkezés</button>
+<button class="btn ghost" id="logoutBtn" style="display:none">Kijelentkezés</button>
+</div>
+
+
+<hr style="margin:12px 0">
+
+
+<div class="menu">
+<button class="btn ghost" id="navCatalog">Katalógus</button>
+<button class="btn ghost" id="navLoans">Kölcsönzések</button>
+<button class="btn ghost" id="navManage" style="display:none">Könyvek kezelése (admin)</button>
+<button class="btn ghost" id="navExport">Export</button>
+</div>
+
+
+<div style="margin-top:16px" class="small">
+<div><strong>Bejelentkezve:</strong> <span id="currentUser">nincs</span></div>
+<div style="margin-top:8px"><span class="badge" id="currentRole">-</span></div>
+</div>
+</aside>
+
+
+<section class="card main">
+<div id="mainContent">
+<h2>Üdv a könyvtárban</h2>
+<p class="small">Belépés után használhatod a katalógust. Admin hozzáadhat és törölhet könyveket; a user kölcsönöz és visszahoz.</p>
+</div>
+</section>
+</div>
+
+
+<footer>
+<div class="small">Teljesen kliens-oldali alkalmazás (localStorage). Feltölthető GitHub Pages-re.</div>
+</footer>
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
