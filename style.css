@@ -1,0 +1,25 @@
+:root{--bg:#f4f6fb;--card:#ffffff;--accent:#0b6efd;--muted:#6b7280}
+*{box-sizing:border-box}
+body{font-family:Inter,Segoe UI,Roboto,Arial; margin:0;background:var(--bg);color:#111}
+header{background:linear-gradient(90deg,#0b6efd22,#06b6d433);padding:14px 20px;border-bottom:1px solid #e6eefb}
+.container{max-width:1000px;margin:20px auto;padding:0 16px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:44px;height:44px;border-radius:8px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+h1{font-size:18px;margin:0}
+.grid{display:grid;grid-template-columns:280px 1fr;gap:16px}
+.card{background:var(--card);border-radius:10px;padding:14px;box-shadow:0 6px 18px rgba(12,26,75,0.06)}
+.menu{display:flex;flex-direction:column;gap:8px}
+.btn{display:inline-block;padding:8px 12px;border-radius:8px;border:none;background:var(--accent);color:white;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid #d9e8ff}
+.small{font-size:13px;color:var(--muted)}
+.form-row{display:flex;gap:8px;margin-top:8px}
+input,select,textarea{padding:8px;border-radius:8px;border:1px solid #e3e7ee}
+table{width:100%;border-collapse:collapse;margin-top:8px}
+th,td{padding:8px;border-bottom:1px solid #f0f2f7;text-align:left}
+.badge{background:#eef6ff;color:#024; padding:4px 8px;border-radius:999px;font-size:12px}
+.right{display:flex;gap:8px;align-items:center}
+@media(max-width:840px){.grid{grid-template-columns:1fr}.sidebar{order:2}}
+
+
+/* Print */
+@media print{ header, .sidebar, footer{display:none} .card{box-shadow:none} }
